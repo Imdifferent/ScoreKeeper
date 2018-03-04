@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="score_text_size">56sp</dimen>
+    <dimen name="score_text_padding">10dp</dimen>
+    <dimen name="padding_left_fouls">26dp</dimen>
+    <dimen name="text_size_fouls">12sp</dimen>
+    <dimen name="padding_right_fouls">26dp</dimen>
+    <dimen name="margin_8dp">8dp</dimen>
+    <dimen name="margin_24dp">24dp</dimen>
+    <dimen name="margin_15dp">15dp</dimen>
+    <dimen name="text_size_number_of_fouls">15dp</dimen>
+</resources>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Score Keeper</string>
+    <string name="font_family">sans-serif-light</string>
+    <string name="fouls_number">Number of fouls</string>
+    <string name="plus_3_points">+3 points</string>
+    <string name="plus_2_points">+2 points</string>
+    <string name="free_throw">free throw</string>
+    <string name="foul">foul</string>
+    <string name="reset">reset</string>
+</resources>
