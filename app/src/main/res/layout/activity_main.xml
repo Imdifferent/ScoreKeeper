@@ -1,12 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg"
     android:fillViewport="true"
+    tools:context="com.example.andoid.scorekeeper.MainActivity"
+    android:background="@drawable/bg"
     android:scaleType="centerCrop">
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
 
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -19,15 +27,15 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:orientation="vertical"
-            tools:context="com.example.andoid.courtcounter.MainActivity">
+            android:orientation="vertical">
 
 
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:src="@drawable/lc" />
+                android:src="@drawable/lc"
+                android:contentDescription="@string/content_description"/>
 
             <TextView
                 android:id="@+id/team_a_score"
@@ -36,7 +44,7 @@
                 android:fontFamily="@string/font_family"
                 android:gravity="center_horizontal"
                 android:padding="@dimen/score_text_padding"
-                android:text="0"
+                android:text="@string/zero"
                 android:textColor="@color/score_color"
                 android:textSize="@dimen/score_text_size" />
 
@@ -53,7 +61,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="2"
                     android:fontFamily="@string/font_family"
-                    android:paddingLeft="@dimen/padding_left_fouls"
+                    android:layout_marginLeft="@dimen/margin_26dp"
                     android:text="@string/fouls_number"
                     android:textSize="@dimen/text_size_fouls" />
 
@@ -64,8 +72,8 @@
                     android:layout_weight="1"
                     android:fontFamily="sans-serif-light"
                     android:gravity="end"
-                    android:paddingRight="@dimen/padding_right_fouls"
-                    android:text="0"
+                    android:layout_marginRight="@dimen/margin_26dp"
+                    android:text="@string/zero"
                     android:textColor="@color/fouls_text_color"
                     android:textSize="@dimen/text_size_number_of_fouls"
                     android:textStyle="bold" />
@@ -121,14 +129,14 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:orientation="vertical"
-            tools:context="com.example.andoid.courtcounter.MainActivity">
+            android:orientation="vertical">
 
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:src="@drawable/sw" />
+                android:src="@drawable/sw"
+                android:contentDescription="@string/content_description"/>
 
             <TextView
                 android:id="@+id/team_b_score"
@@ -137,7 +145,7 @@
                 android:fontFamily="@string/font_family"
                 android:gravity="center_horizontal"
                 android:padding="@dimen/score_text_padding"
-                android:text="0"
+                android:text="@string/zero"
                 android:textColor="@color/score_color"
                 android:textSize="@dimen/score_text_size" />
 
@@ -154,7 +162,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="2"
                     android:fontFamily="@string/font_family"
-                    android:paddingLeft="@dimen/padding_left_fouls"
+                    android:layout_marginLeft="@dimen/margin_26dp"
                     android:text="@string/fouls_number"
                     android:textSize="@dimen/text_size_fouls" />
 
@@ -165,8 +173,8 @@
                     android:layout_weight="1"
                     android:fontFamily="sans-serif-light"
                     android:gravity="end"
-                    android:paddingRight="@dimen/padding_right_fouls"
-                    android:text="0"
+                    android:layout_marginRight="@dimen/margin_26dp"
+                    android:text="@string/zero"
                     android:textColor="@color/fouls_text_color"
                     android:textSize="@dimen/text_size_number_of_fouls"
                     android:textStyle="bold" />
@@ -213,14 +221,17 @@
         </LinearLayout>
     </LinearLayout>
 
+
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin_8dp"
         android:layout_marginBottom="@dimen/margin_15dp"
         android:onClick="resetButton"
         android:text="@string/reset"
         android:textColor="@android:color/white" />
 
 </RelativeLayout>
+    </ScrollView>

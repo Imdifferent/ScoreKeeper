@@ -7,4 +7,6 @@
     <string name="free_throw">free throw</string>
     <string name="foul">foul</string>
     <string name="reset">reset</string>
+    <string name="content_description">logo</string>
+    <string name="zero">0</string>
 </resources>
