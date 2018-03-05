@@ -5,5 +5,6 @@
     <color name="colorAccent">#FF4081</color>
     <color name="score_color">#64B5F6</color>
     <color name="fouls_text_color">#D81B60</color>
+    <color name="gray">#E0E0E0</color>
 
 </resources>
